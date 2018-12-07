@@ -44,7 +44,7 @@ function process()
 var a=document.getElementById("sinA").value;
 var b=document.getElementById("sinB").value;
 var url="http://noextralives.github.io/arkna/sin-" + a + "-" + b;
-if false {return false;}
+if false then return false;
 location.href=url;
 return false;
 }
@@ -52,6 +52,10 @@ return false;
 <form onSubmit="return process();">
 SIN-<input type="text" name="sinA" id="sinA" maxlength="2" value="00" size="2">-<input type="text" name="sinB" id="sinB" maxlength="4" value="0000" size="4"><br><input type="submit" value="Access SIN Record">
 </form>
+    
+<script>
+for(var i = 0; i < 5; i++) {document.write("The End Is Never");}
+    </script>
 
     
   </body>
