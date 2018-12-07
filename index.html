@@ -32,5 +32,24 @@ h1 {
         <h1>NoExtraLives.GitHub.io</h1>
         </header>
     <div align="center" margin="auto"><img src="NewLx0_alpha_cropped.png" height="25%" width="25%"></div> 
+    
+    
+    <br><br>
+    
+    
+
+<script>
+function process()
+{
+var url="http://noextralives.github.io/arkna/sin-" + document.getElementById("sinA").value +"-" document.getElementById("sinB").value;
+location.href=url;
+return false;
+}
+</script>
+<form onSubmit="return process();">
+SIN-<input type="text" name="sinA" id="sinA" maxlength="4" value="0000">-<input type="text" name="sinB" id="sinB" maxlength="2" value="00"><br><input type="submit" value="Access SIN Record">
+</form>
+
+    
   </body>
 </html>
