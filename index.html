@@ -30,6 +30,7 @@ h1 {
   <body>
          <header>
         <h1>NoExtraLives.GitHub.io</h1>
+           <br>This is a test page. We're learning JavaScript. You can visit our website at <a href="NoExtraLives.com">NoExtraLives.com</a> or <a href="twitter.com/NoExtraLives">follow us on Twitter @NoExtraLives</a>. 
         </header>
     <div align="center" margin="auto"><img src="NewLx0_alpha_cropped.png" height="25%" width="25%"></div> 
     
@@ -51,11 +52,17 @@ return false;
 <form onSubmit="return process();">
 SIN-<input type="text" name="sinA" id="sinA" maxlength="2" value="00" size="2">-<input type="text" name="sinB" id="sinB" maxlength="4" value="0000" size="4"><br><input type="submit" value="Access SIN Record">
 </form>
-    
+
 <script>
-//for(var i = 0; i < 5; i++) {document.write("The End Is Never");}
+  function secretword() 
+  {
+    if (document.getElementById("wordbox").value == "pizza") {
+        location.href="NoExtraLives.com/🍕";
+    }
+    return false;
     </script>
 
     
+    <form><input type=text name="wordbox" id="wordbox" value="It's a secret!" onchange="return secretword();"></form>
   </body>
 </html>
